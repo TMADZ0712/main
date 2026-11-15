@@ -3993,6 +3993,30 @@
 			)
 		)
 	)
+	(global_label "LS"
+		(shape input)
+		(at 171.45 67.31 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "5c4abd10-422b-449c-8adf-ed1f317b57f7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 166.2272 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+	)
 	(global_label "BIN2"
 		(shape input)
 		(at 140.97 95.25 180)
@@ -4230,6 +4254,30 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+	)
+	(global_label "LS"
+		(shape input)
+		(at 41.91 134.62 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "b88f78e7-3c7c-4e99-9d20-33d0fa02bebd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 36.6872 134.62 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 	)
@@ -6623,7 +6671,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22uF"
+		(property "Value" "10uF"
 			(at 125.73 119.7609 0)
 			(show_name no)
 			(do_not_autoplace no)
