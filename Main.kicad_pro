@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.8,
-          "height": 1.4,
-          "width": 1.4
+          "drill": 1.0,
+          "height": 1.7,
+          "width": 1.7
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -81,7 +81,7 @@
         "version": 2
       },
       "rule_severities": {
-        "annular_width": "error",
+        "annular_width": "warning",
         "clearance": "warning",
         "connection_width": "warning",
         "copper_edge_clearance": "error",
@@ -136,7 +136,7 @@
         "track_not_centered_on_via": "ignore",
         "track_on_post_machined_layer": "error",
         "track_segment_length": "error",
-        "track_width": "error",
+        "track_width": "warning",
         "tracks_crossing": "error",
         "tuning_profile_track_geometries": "ignore",
         "unconnected_items": "error",
@@ -160,7 +160,7 @@
         "min_text_thickness": 0.08,
         "min_through_hole_diameter": 0.3,
         "min_track_width": 0.4,
-        "min_via_annular_width": 0.254,
+        "min_via_annular_width": 0.3,
         "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
@@ -531,14 +531,6 @@
         "via_diameter": 0.6,
         "via_drill": 0.3,
         "wire_width": 6
-      },
-      {
-        "name": "5V",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.8,
-        "tuning_profile": ""
       }
     ],
     "meta": {
@@ -546,20 +538,7 @@
     },
     "net_colors": {},
     "netclass_assignments": {},
-    "netclass_patterns": [
-      {
-        "netclass": "5V",
-        "pattern": "+5V"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "+3V3"
-      },
-      {
-        "netclass": "5V",
-        "pattern": "VCC"
-      }
-    ]
+    "netclass_patterns": []
   },
   "pcbnew": {
     "last_paths": {
@@ -652,60 +631,12 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
-        },
-        {
-          "group_by": false,
-          "label": "MPN",
-          "name": "MPN",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "SOURCE_URL",
-          "name": "SOURCE_URL",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "STANDARD",
-          "name": "STANDARD",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MAXIMUM_PACKAGE_HEIGHT",
-          "name": "MAXIMUM_PACKAGE_HEIGHT",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "#",
-          "name": "${ITEM_NUMBER}",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "DATASHEET_URL",
-          "name": "DATASHEET_URL",
-          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "",
+      "name": "Default Editing",
       "sort_asc": true,
       "sort_field": "Reference"
     },
@@ -750,7 +681,7 @@
         "uuid": "f943d7ea-4bb6-40cd-84e2-d86c7aa9d932"
       }
     ],
-    "used_designators": "#PWR1-24,A1,C1-2,D1-3,H1-8,J1,J4-6,M1-3,Q1,R1-2,SW1-3,TP1-2,U1-5",
+    "used_designators": "#PWR1-24,A1,C1-3,D1-2,H1-8,J4-6,M1-3,Q1,R1,SW1-3,U1-5",
     "variants": []
   },
   "sheets": [
